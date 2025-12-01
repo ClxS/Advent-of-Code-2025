@@ -5,6 +5,8 @@
 *.sln.docstates
 *.vcxproj.filters
 
+.idea
+
 # C# Build objects
 [Bb]in/
 [Oo]bj/
