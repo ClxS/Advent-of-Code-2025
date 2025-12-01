@@ -50,6 +50,7 @@ if (args.Length > 0)
 				.ToList());
 		}
 
+		Console.ReadLine();
 		return 0;
 	}
 }
