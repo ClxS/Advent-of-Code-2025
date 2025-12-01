@@ -40,24 +40,21 @@ public class Day_01_Original : IPuzzle
 		int zeroesHit = 0;
 		foreach (string line in input.Lines)
 		{
-			bool isLeft = line[0] == 'L';
-			int count = int.Parse(line[1..]);
-			
+			int direction = int.Sign(line[0] - 'N');
+			int count = int.Parse(line.AsSpan()[1..]);
+
 			int loops = count / 100;
 			count %= 100;
 
 			int originalValue = value;
-			if (isLeft)
-				value -= count;
-			else
-				value += count;
+			value += count * direction;
 
 			int valuesHitThisTime = loops;
 			switch (value)
 			{
 				case 0:
 					valuesHitThisTime++;
-					break;	
+					break;
 				case < 0 when originalValue > 0:
 					valuesHitThisTime++;
 					value = 100 + value;
