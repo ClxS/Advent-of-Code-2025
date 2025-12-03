@@ -1,9 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-	<RootNamespace>AdventOfCode.Puzzles._2025</RootNamespace>
+		<RootNamespace>AdventOfCode.Puzzles._2025</RootNamespace>
   </PropertyGroup>
   
   <ItemGroup>
-	<ProjectReference Include="..\..\AdventOfCode.Common\AdventOfCode.Common.csproj" />
+		<ProjectReference Include="..\..\AdventOfCode.Common\AdventOfCode.Common.csproj" />
   </ItemGroup>
+
+	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+	</PropertyGroup>
 </Project>
