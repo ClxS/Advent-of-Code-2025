@@ -34,8 +34,4 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Inputs\2025\" />
-  </ItemGroup>
-
 </Project>
