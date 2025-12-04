@@ -8,7 +8,7 @@ public class Day_03_Original : IPuzzle
 		string part1 = SolvePart1(input);
 		string part2 = SolvePart2(input);
 
-		return ("part1", part2);
+		return (part1, part2);
 	}
 
 	private static string SolvePart1(PuzzleInput input)

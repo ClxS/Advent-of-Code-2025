@@ -6,6 +6,10 @@
   <ItemGroup>
 		<ProjectReference Include="..\..\AdventOfCode.Common\AdventOfCode.Common.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.HighPerformance" />
+  </ItemGroup>
 
 	<PropertyGroup Condition="'$(Configuration)' == 'Debug'">
 		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
